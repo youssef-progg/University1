@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>University Website Design</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+       <nav>
+        
+            <a href="index.html"><img src="images/off-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>              
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+       </nav>
+       <h1>About Us</h1>
+    </section>
+
+
+    <!-- ----------conetnt---------- -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>[Taylor's University] is a leading institution committed
+                 to excellence in education, research, and community engagement.
+                 Our diverse academic programs, distinguished faculty,
+                 and state-of-the-art facilities create an environment 
+                 where students thrive. Join us to explore innovative ideas,
+                 gain valuable skills, and be part of a vibrant campus life
+                 that prepares you for a successful future.</p>
+                 <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/consol.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Follow our social media links to know more about our courses ,and take 
+        your first step for succssed by practicing <br>your favorete materials with qualified teachers.
+         </p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <p>Copyrights <i class="fa-regular fa-copyright"></i>
+     : 2024 All Right Resaved To @taylor.com </p>
+</section>
+
+
+
+<!-- ------Java scrpit -------->
+    <script>
+        
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu(){
+            navLinks.style.right = "0";
+
+        }
+
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>University Website Design</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+       <nav>
+        
+            <a href="index.html"><img src="images/off-removebg-preview.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>             
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+       </nav>
+       <h1>Our Certificate & Online programs for 2024</h1>
+    </section>
+
+
+<!-- ----------blog page content -------- -->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/hello.jpg" alt="">
+            <h2>Our Certificate & Online programs for 2024</h2>
+            <p>The [Taylor's University] Blog serves as the heartbeat of our vibrant academic community, showcasing the achievements, insights, and experiences that make our university unique. Whether you are a current student, prospective student, faculty member, alumni, or a curious reader, this blog is your gateway to understanding what makes [University Name] special.
+            </p> <br><br>
+            <p><b> Campus Life and Culture</b> Explore the diverse and dynamic campus life at [Taylor's University]. From student organizations and clubs to sports and cultural events, our blog highlights the activities that enrich the student experience. Discover stories about the traditions that define our campus and the community events that bring us together.</p>
+            <br> <br>
+            <p> <b>Academic Excellence</b> Learn about the cutting-edge research and innovative teaching that happens every day at [Taylor's University]. Our faculty and students are at the forefront of their fields, making significant contributions to science, technology, humanities, and the arts. Read about their groundbreaking projects, academic achievements, and the intellectual challenges they overcome.</p>
+            <br><br>
+            <p><b>Student Experiences</b> Hear directly from the students who make [Taylor's University] a diverse and inclusive environment. Our blog features personal stories, interviews, and reflections from students who share their journeys, challenges, and triumphs. Gain insight into their daily lives, their academic pursuits, and their unique perspectives.</p>
+            <br><br>
+            <p><b>Alumni Success</b> We are proud of our alumni and their accomplishments. Our blog regularly features profiles of alumni who have made their mark in various industries and sectors. Learn about their career paths, the impact they are making in their communities, and how their time at [Taylor's University] prepared them for success.</p>
+            <br><br>
+            <p><b>Tips and Resources</b> The [Taylor's University] Blog is also a valuable resource for prospective students and their families. Find tips on navigating the admissions process, selecting the right major, and making the most of your college experience. Our blog also provides information on scholarships, financial aid, and career planning.</p>
+            <br><br>
+            <p><b>Join the Conversation</b> We invite you to engage with our content and be part of the [Taylor's University] community. Share your thoughts, ask questions, and connect with others who share your interests and passions. Follow us on social media to stay updated on the latest blog posts and join the conversation.</p>
+       
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form">
+                   
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <textarea rows="5" placeholder="YOur comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+                </form>
+          
+            </div>
+       
+       
+       
+       
+       
+       
+       
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning </span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Sicence </span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD </span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism </span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce </span>
+                <span>30</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Follow our social media links to know more about our courses ,and take 
+        your first step for succssed by practicing <br>your favorete materials with qualified teachers.
+        </p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Copyrights <i class="fa-regular fa-copyright"></i>
+        : 2024 All Right Resaved To @taylor.com </p>
+    </section>
+
+
+
+    <!-- ------Java scrpit -------->
+        <script>
+            
+            var navLinks = document.getElementById("navLinks")
+
+            function showmenu(){
+                navLinks.style.right = "0";
+
+            }
+
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+</body>
+</html>
